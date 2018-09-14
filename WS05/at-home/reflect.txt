@@ -1,0 +1,27 @@
+//Callum Dodge
+//Date: June 19, 2018
+//Workshop 5
+//100 229 178
+
+Reflection:
+
+1. The reason why the operator+ member opertaor function returns a Fraction object instead 
+of a reference to a Fraction object because we are taking a copy of the alter object. Meaning, 
+we are taking the address of the Fraction object and creating a temporary to use. If we returned 
+a reference to the Fraction Object we are just returning the address of the object that we have 
+used, making the temporary object completely useless. 
+
+2. The temporary objects that were created in the tester module are Fraction's a to e. The only 
+Fraction objects that were not put in a safe empty was b, d, and e. 
+
+3. The simplifications that I added to this workshop to minimize code duplication was to use the 
+isEmpty function and reversed the order for an operator member function. This workshop required
+for you to put an object into a safe empty state if the object doesn't meet the requirements; the 
+function did just that. The function, isEmpty checks to see if the function is in a safe empty state
+or if the function is empty. If it is or needs to be this function will put the object into one. By 
+reversing the order of a function == to != all we have to do is call one of the functions, past the
+parameter, and reverse the if statement. This allows the function to become opposite. 
+
+4. In this workshop, I learned how to have a better understanding of what operator overloading is and
+what's the purpose of using it. I have also learned how to declare and use a operator member function
+for different situations.
